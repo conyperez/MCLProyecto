@@ -33,6 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,23 +53,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controlador\Controlador.cs" />
+    <Compile Include="Vista\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ConexionBD.cs" />
+    <Compile Include="Modelo\Diagnostico.cs" />
+    <Compile Include="Modelo\Evaluaciones.cs" />
+    <Compile Include="Modelo\GenerarReporte.cs" />
+    <Compile Include="Modelo\LeerArchivo.cs" />
+    <Compile Include="Modelo\Modelo.cs" />
+    <Compile Include="Modelo\Modulo.cs" />
+    <Compile Include="Vista\PrincipalAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\PrincipalAlumno.Designer.cs">
+      <DependentUpon>PrincipalAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PrincipalProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\PrincipalProfesor.Designer.cs">
+      <DependentUpon>PrincipalProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SeleccionarTipoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SeleccionarTipoUsuario.Designer.cs">
+      <DependentUpon>SeleccionarTipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\RegistroAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroAlumno.Designer.cs">
+      <DependentUpon>RegistroAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\RegistroProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroProfesor.Designer.cs">
+      <DependentUpon>RegistroProfesor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vista\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\PrincipalAlumno.resx">
+      <DependentUpon>PrincipalAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\PrincipalProfesor.resx">
+      <DependentUpon>PrincipalProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SeleccionarTipoUsuario.resx">
+      <DependentUpon>SeleccionarTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroAlumno.resx">
+      <DependentUpon>RegistroAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroProfesor.resx">
+      <DependentUpon>RegistroProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,6 +141,61 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barraA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registroAlumno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eleccion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registroProfesor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barraI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnModulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDiagnostico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRealizar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProgreso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHistorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generarReporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilAlumno.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

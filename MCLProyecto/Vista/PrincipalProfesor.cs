@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace MCLProyecto
 {
-    public partial class Form1 : Form
+    public partial class PrincipalProfesor : Form
     {
-        public Form1()
+        public PrincipalProfesor()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
