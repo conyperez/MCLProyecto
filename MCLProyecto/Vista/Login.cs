@@ -54,14 +54,14 @@ namespace MCLProyecto
                 conexion.cerrarBD();
                 if (existeAlumno)
                 {
-                    PrincipalAlumno form = new PrincipalAlumno();
+                    PrincipalAlumno form = new PrincipalAlumno(textRut.Text);
                     Hide();
                     form.ShowDialog();
                     Close();
                 }
                 else if (existeProfesor)
                 {
-                    PrincipalProfesor form = new PrincipalProfesor();
+                    PrincipalProfesor form = new PrincipalProfesor(textRut.Text);
                     Hide();
                     form.ShowDialog();
                     Close();

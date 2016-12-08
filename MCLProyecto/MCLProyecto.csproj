@@ -195,7 +195,27 @@
   <ItemGroup>
     <None Include="Resources\perfilAlumno.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\perfilAlumnoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDiagnosticoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnModuloP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProgresoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHistorialP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generarReporteP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

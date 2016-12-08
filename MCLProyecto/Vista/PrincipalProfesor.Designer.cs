@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblNombreP = new System.Windows.Forms.Label();
             this.lblProfesor = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblNombreP = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,18 +54,18 @@
             this.panel1.Size = new System.Drawing.Size(1347, 97);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // lblProfesor
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel2.BackgroundImage = global::MCLProyecto.Properties.Resources.barraI;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(-14, 97);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 691);
-            this.panel2.TabIndex = 1;
+            this.lblProfesor.AutoSize = true;
+            this.lblProfesor.BackColor = System.Drawing.Color.Transparent;
+            this.lblProfesor.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfesor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblProfesor.Location = new System.Drawing.Point(26, 23);
+            this.lblProfesor.Name = "lblProfesor";
+            this.lblProfesor.Size = new System.Drawing.Size(112, 43);
+            this.lblProfesor.TabIndex = 3;
+            this.lblProfesor.Text = "label1";
+            this.lblProfesor.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblNombreP
             // 
@@ -80,18 +80,40 @@
             this.lblNombreP.TabIndex = 2;
             this.lblNombreP.Text = "label1";
             // 
-            // lblProfesor
+            // panel2
             // 
-            this.lblProfesor.AutoSize = true;
-            this.lblProfesor.BackColor = System.Drawing.Color.Transparent;
-            this.lblProfesor.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfesor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblProfesor.Location = new System.Drawing.Point(26, 23);
-            this.lblProfesor.Name = "lblProfesor";
-            this.lblProfesor.Size = new System.Drawing.Size(112, 43);
-            this.lblProfesor.TabIndex = 3;
-            this.lblProfesor.Text = "label1";
-            this.lblProfesor.Click += new System.EventHandler(this.label1_Click);
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel2.BackgroundImage = global::MCLProyecto.Properties.Resources.barraI;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(-14, 97);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(360, 691);
+            this.panel2.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.BackgroundImage = global::MCLProyecto.Properties.Resources.btnDiagnostico1;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 114);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(344, 82);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.BackgroundImage = global::MCLProyecto.Properties.Resources.btnModulo;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 187);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(344, 116);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -105,28 +127,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox2.BackgroundImage = global::MCLProyecto.Properties.Resources.btnModulo;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 187);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(344, 116);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.BackgroundImage = global::MCLProyecto.Properties.Resources.btnDiagnostico1;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 114);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(344, 82);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // PrincipalProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -137,12 +137,13 @@
             this.Controls.Add(this.panel1);
             this.Name = "PrincipalProfesor";
             this.Text = "label";
+            this.Load += new System.EventHandler(this.PrincipalProfesor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

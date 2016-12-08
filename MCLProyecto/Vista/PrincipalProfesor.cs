@@ -12,9 +12,12 @@ namespace MCLProyecto
 {
     public partial class PrincipalProfesor : Form
     {
-        public PrincipalProfesor()
+        private string rut;
+
+        public PrincipalProfesor(string rut)
         {
             InitializeComponent();
+            this.rut = rut;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +26,11 @@ namespace MCLProyecto
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PrincipalProfesor_Load(object sender, EventArgs e)
         {
 
         }

@@ -124,6 +124,20 @@ namespace MCLProyecto.Modelo
             return reader.Read(); ;
         }
 
+        // Seleccionar el nombre, apellido del alumno
+        public string SeleccionarNombreAlumno(string rut)
+        {
+            cmd = new MySqlCommand(String.Format("SELECT nombre, apellido_p FROM alumno WHERE alumno.rut = '" + rut + "'"), conn);
+            MySqlDataReader query = cmd.ExecuteReader();
+            string nombre = null;
+            while (query.Read())
+            {
+                nombre = (string)query[0];
+                nombre = nombre + " " + (string)query[1];
+            }
+            return nombre;
+        }
+
         // Si el alumno realizo la evaluacion de diagnostico
         public bool diagnosticoRealizado(string rut)
         {
