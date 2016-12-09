@@ -63,7 +63,6 @@
             // 
             // panelBienvenida
             // 
-            this.panelBienvenida.BackgroundImage = global::MCLProyecto.Properties.Resources.inicio3;
             this.panelBienvenida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBienvenida.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBienvenida.Location = new System.Drawing.Point(360, 98);
@@ -74,7 +73,6 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::MCLProyecto.Properties.Resources.barraI;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.pictureGenerarReporteP);
             this.panel2.Controls.Add(this.pictureHistorialP);
@@ -95,7 +93,6 @@
             // 
             // pictureGenerarReporteP
             // 
-            this.pictureGenerarReporteP.BackgroundImage = global::MCLProyecto.Properties.Resources.generarReporteP;
             this.pictureGenerarReporteP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureGenerarReporteP.Location = new System.Drawing.Point(-1, 425);
             this.pictureGenerarReporteP.Name = "pictureGenerarReporteP";
@@ -106,7 +103,6 @@
             // 
             // pictureHistorialP
             // 
-            this.pictureHistorialP.BackgroundImage = global::MCLProyecto.Properties.Resources.btnHistorialP;
             this.pictureHistorialP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureHistorialP.Location = new System.Drawing.Point(-1, 335);
             this.pictureHistorialP.Name = "pictureHistorialP";
@@ -117,7 +113,6 @@
             // 
             // pictureProgresoP
             // 
-            this.pictureProgresoP.BackgroundImage = global::MCLProyecto.Properties.Resources.btnProgresoP;
             this.pictureProgresoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureProgresoP.Location = new System.Drawing.Point(1, 245);
             this.pictureProgresoP.Name = "pictureProgresoP";
@@ -128,7 +123,6 @@
             // 
             // pictureModuloP
             // 
-            this.pictureModuloP.BackgroundImage = global::MCLProyecto.Properties.Resources.btnModuloP;
             this.pictureModuloP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureModuloP.Location = new System.Drawing.Point(-3, 157);
             this.pictureModuloP.Name = "pictureModuloP";
@@ -139,7 +133,6 @@
             // 
             // pictureDiagnosticoP
             // 
-            this.pictureDiagnosticoP.BackgroundImage = global::MCLProyecto.Properties.Resources.btnDiagnosticoP;
             this.pictureDiagnosticoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureDiagnosticoP.Location = new System.Drawing.Point(0, 72);
             this.pictureDiagnosticoP.Name = "pictureDiagnosticoP";
@@ -150,7 +143,6 @@
             // 
             // pictureGenerarReporte
             // 
-            this.pictureGenerarReporte.BackgroundImage = global::MCLProyecto.Properties.Resources.generarReporte;
             this.pictureGenerarReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureGenerarReporte.Location = new System.Drawing.Point(3, 418);
             this.pictureGenerarReporte.Name = "pictureGenerarReporte";
@@ -161,7 +153,6 @@
             // 
             // pictureHistorial
             // 
-            this.pictureHistorial.BackgroundImage = global::MCLProyecto.Properties.Resources.btnHistorial;
             this.pictureHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureHistorial.Location = new System.Drawing.Point(1, 330);
             this.pictureHistorial.Name = "pictureHistorial";
@@ -172,7 +163,6 @@
             // 
             // pictureProgreso
             // 
-            this.pictureProgreso.BackgroundImage = global::MCLProyecto.Properties.Resources.btnProgreso;
             this.pictureProgreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureProgreso.Location = new System.Drawing.Point(9, 248);
             this.pictureProgreso.Name = "pictureProgreso";
@@ -183,7 +173,6 @@
             // 
             // pictureModulo
             // 
-            this.pictureModulo.BackgroundImage = global::MCLProyecto.Properties.Resources.btnD;
             this.pictureModulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureModulo.Location = new System.Drawing.Point(0, 160);
             this.pictureModulo.Name = "pictureModulo";
@@ -194,7 +183,6 @@
             // 
             // pictureDiagnostico
             // 
-            this.pictureDiagnostico.BackgroundImage = global::MCLProyecto.Properties.Resources.btnDiagnostico1;
             this.pictureDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureDiagnostico.Location = new System.Drawing.Point(3, 72);
             this.pictureDiagnostico.Name = "pictureDiagnostico";
@@ -205,7 +193,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::MCLProyecto.Properties.Resources.btnRealizar2;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(10, -3);
             this.pictureBox3.Name = "pictureBox3";
@@ -215,7 +202,6 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MCLProyecto.Properties.Resources.barraA;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tipoUsuario);
@@ -228,7 +214,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::MCLProyecto.Properties.Resources.perfilAlumno;
             this.pictureBox1.Location = new System.Drawing.Point(7, 94);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 95);
